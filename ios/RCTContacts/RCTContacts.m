@@ -22,11 +22,11 @@
 - (void)preLoadContactView
 {
     // Init the contactViewController so it will display quicker first time it's accessed
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"Preloading CNContactViewController");
-        CNContactViewController *contactViewController = [CNContactViewController viewControllerForNewContact:nil];
-        [contactViewController view];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"Preloading CNContactViewController");
+//        CNContactViewController *contactViewController = [CNContactViewController viewControllerForNewContact:nil];
+//        [contactViewController view];
+//    });
 }
 
 RCT_EXPORT_MODULE();
